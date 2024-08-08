@@ -1,0 +1,232 @@
+/* general */
+html,body{
+  padding:0;
+  margin:0;
+  font-family: 'Zen Maru Gothic', serif;
+  scroll-behavior: smooth;
+}
+p{
+  line-height: 1.5;
+}
+header{
+  background:#646AB8;
+  box-shadow:
+    0 2px 4px -1px rgba(0,0,0,0.2),
+    0 4px 5px 0 rgba(0,0,0,0.14),
+    0 1px 10px 0 rgba(0,0,0,0.12);
+  /*position:sticky;*/
+  /*top:0;*/
+}
+#title{
+  max-width: 1200px;
+  background:#646AB8;
+  color:#fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 auto;
+}
+header img{
+  display: block;
+  height: 60px;
+  margin-right: 20px;
+}
+#header_logo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 0.9;
+  text-align: center;
+}
+.nav_bar ul{
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav_bar li{
+  display: inline-block;
+  margin: auto 5px;
+}
+.nav_bar li a{
+  text-decoration: none;
+  color: #fff;
+}
+.nav_bar li a:hover{
+  transition-duration: 0.5s;
+  cursor: pointer;
+  text-decoration: underline;
+  color:#CCD6FF;
+}
+main{
+  font-size: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+.main_page{
+  box-sizing: border-box;
+  padding: 20px 60px 40px 60px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.16);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  overflow: scroll;
+}
+.main_page img{
+  display: block;
+  margin: 0 auto;
+}
+#page_0{
+  background: url("../img/bg_1.png") no-repeat center bottom/cover;
+}
+#page_2{
+  background: url("../img/main_visual.png") no-repeat top center/cover;
+}
+.link_SDG{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+}
+.link_SDG a{
+  text-decoration: none;
+  color:#000
+}
+.link_SDG a:hover{
+  transition-duration: 0.5s;
+  text-decoration: underline;
+  color:#847FC7;
+}
+#SDG_goal{
+  margin-top: 60px;
+}
+#health_img{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#health_img p{
+  font-weight: bold;
+  text-align: left;
+  margin: auto 0;
+  border-radius: 0.425rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.16);
+  padding: 30px 20px;
+  background-color: rgba(255,255,255,0.7);
+}
+#health_img img{
+  display: block;
+  height:120px; width: auto;
+  background-color: #fcc30b;
+  margin: 0 30px 0 0;
+  border-radius: 6px;
+}
+#How_example li{
+  margin-bottom: 10px;
+}
+#How_example .bold{
+  font-weight: bold;
+  font-size: 25px;
+  font-style: italic;
+}
+#page_2 .block{
+  text-align: left;
+  border-radius: 0.425rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.16);
+  padding: 20px 20px;
+  background-color:rgba(255,255,255,0.7);
+  margin:60px 0 20px 0;
+}
+#page_4 .block{
+  text-align: left;
+  margin: 20px 0;
+  border-radius: 0.425rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.16);
+  padding: 20px 20px;
+}
+#page_4 .bold{
+  font-weight: bold;
+}
+#list_benefit li{
+  font-weight: bold;
+  font-size: 23px;
+}
+.reason{
+  margin:15px 0;
+}
+h2{
+  font-size: 41px;
+}
+footer{
+  text-align: center;
+  color: #fff;
+  background-color: #8989B8;
+  font-size: 20px;
+  padding: 20px 0;
+  position: relative;
+}
+#updated{
+  position: absolute;
+  font-size: 15px;
+  text-align: right;
+  bottom: 0; right:10px;
+}
+/*Popup Screen Design*/
+.example_pic{
+  width: 100%; height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(100,100,100,0.7);
+  backdrop-filter: blur(8px);
+}
+#How_example li p:hover{
+  transition-duration: 0.5s;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #5D61B8;
+}
+.popup_main{
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-50%, -50%);
+}
+.popup_main img{
+  width: 600px; height: auto;
+}
+.popup_main p{
+  margin:10px;
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+}
+/*Progress bar Design*/
+.container{
+  position: fixed;
+  bottom:0;
+  height: 10px;
+  width: 100%;
+}
+.progress_bar{
+  height: 10px;
+  background-color: lightpink;
+}
+/*Scroll bar Design*/
+body{
+  overflow-y:scroll;
+}
+body::-webkit-scrollbar{
+  width:10px;
+  height:20px;
+}
+body::-webkit-scrollbar-thumb{
+  background: #5D61B8;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background-color:#5E2BF0;
+}
+body::-webkit-scrollbar-track{
+  background: #ffffff;
+}

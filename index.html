@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <!--HTML setting-->
+  <meta charset="utf-8">
+  <title>About Japan!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <!--CSS6 style-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--Robots are not allowed-->
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <!--Header part-->
+  <div class="container">
+    <div class="progress_bar" style="width: 0"></div>
+  </div>
+  <header>
+    <div id="title">
+      <div id="header_logo">
+        <img src="img/japan_flag.jpg" alt="japan flag">
+        <h1>About Japan<br><span style="font-size:23px;font-style: italic">SDGs</span></h1>
+      </div>
+      <div class="nav_bar">
+        <ul>
+          <li><a href="#page_0">SDGs!</a></li>
+          <li><a href="#page_1">What?</a></li>
+          <li><a href="#page_2">When?</a></li>
+          <li><a href="#page_3">How?</a></li>
+          <li><a href="#page_4">Why?</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--Main part-->
+  <main>
+    <div class="main_page" id="page_0">
+      <h2>SDGs in Japan</h2>
+      <div id="SDG_index">
+        <a href="https://dashboards.sdgindex.org/profiles/japan" target='_blank'><img src="img/SDGs.png" alt="SDGs profile" style="display:block;width:100%;height:auto"></a>
+        <p class="link_SDG">
+          Source : <a href="https://dashboards.sdgindex.org/profiles/japan">SDG</a>
+        </p>
+      </div>
+      <div id="SDG_goal">
+        <h2 style="color: rgba(0,0,0,0.8)">We chose a goal</h2>
+        <div id="health_img">
+          <a href="https://dashboards.sdgindex.org/static/profiles/pdfs/SDR-2023-japan.pdf" target='_blank'><img src="img/sdg_health.svg" alt="sdg health img"></a>
+          <p>
+            SDG-3 : Good health and well-being
+            <br><span style="font-weight: normal">Ensure healthy lives and promote well-being for all at all ages</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="main_page" id="page_1">
+      <h2>Sports Day「スポーツの日」</h2>
+      <h3>
+        Public Holiday in Japan
+      </h3>
+      <h3>
+        I think Sports Day should be designated and activated as a public holiday around the world.
+      </h3>
+      <a href="https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html"><img src="img/sports-day.png" alt="sport-day img"></a>
+    </div>
+    <div class="main_page" id="page_2">
+      <div class="block">
+        <h2>When?</h2>
+        <h3>
+          Every year on the Second Monday of October (JAPAN)
+          <br><span style="font-size: 19px; color:#5D61B8;">October 9 in 2023</span>
+          <br><span style="font-size: 19px; color:#5D61B8">October 14 in 2024</span>
+        </h3>
+        <p>
+          Sports Day must be a public holiday, and it must be on weekdays.<br>
+          People can't enjoy sports because they are busy with work and study
+          if it's in weekday and not be a public holiday.
+        </p>
+      </div>
+    </div>
+    <div class="main_page" id="page_3">
+      <h2>How?</h2>
+      <!--<p>
+        As Sports Day is a day to promote sports and physical and mental health,
+        many schools and businesses choose this day to hold their annual Field Day,
+        or sports day.
+      </p>-->
+      <ul id="How_example">
+        <li>
+          <span class="bold">Relay race</span>
+          <p class='click' id="p_0" onclick="clickshow(this,'example_pic0')">This is a fun and exciting activity that involves teams of students racing against each other while passing a baton.<br>
+          You can organize relay races for different age groups and have different themes for each race.</p>
+          <div class="example_pic" id="example_pic0" style="display: none">
+            <div class="popup_main">
+              <img src="img/pic/pic1.jpg" alt="pic1">
+              <p onclick="clickshow(document.getElementById('p_0'),'example_pic0')">Close</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="bold">Sack race:</span>
+          <p class='click' id="p_1" onclick="clickshow(this,'example_pic1')">This is a classic sports day activity that involves hopping in a sack.<br>
+            You can organize a sack race for different age groups and have different distances for each race.</p>
+          <div class="example_pic" id="example_pic1" style="display: none">
+            <div class="popup_main">
+              <img src="img/pic/pic2.jpg" alt="pic2">
+              <p onclick="clickshow(document.getElementById('p_1'),'example_pic1')">Close</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="bold">Tug of war:</span>
+          <p class='click' id="p_2" onclick="clickshow(this,'example_pic2')">This is a fun and competitive activity that involves two teams pulling on opposite ends of a rope.<br>
+            You can organize a tug of war for different age groups and have different weights for each team.</p>
+          <div class="example_pic" id="example_pic2" style="display: none">
+            <div class="popup_main">
+              <img src="img/pic/pic3.jpg" alt="pic3">
+              <p onclick="clickshow(document.getElementById('p_2'),'example_pic2')">Close</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="bold">Obstacle course:</span>
+          <p class='click' id="p_3" onclick="clickshow(this,'example_pic3')">This is a challenging activity that involves running, jumping, crawling, and climbing over obstacles.<br>
+            You can organize an obstacle course for different age groups and have different levels of difficulty for each course.</p>
+          <div class="example_pic" id="example_pic3" style="display: none">
+            <div class="popup_main">
+              <img src="img/pic/pic4.jpg" alt="pic4">
+              <p onclick="clickshow(document.getElementById('p_3'),'example_pic3')">Close</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="bold">Bean bag toss:</span>
+          <p class='click' id="p_4" onclick="clickshow(this,'example_pic4')">This is a fun and easy activity that involves tossing bean bags into a target.<br>
+            You can organize a bean bag toss for different age groups and have different distances for each toss.</p>
+          <div class="example_pic" id="example_pic4" style="display: none">
+            <div class="popup_main">
+              <img src="img/pic/pic5.jpg" alt="pic5">
+              <p onclick="clickshow(document.getElementById('p_4'),'example_pic4')">닫기</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="bold">Fancy dress relay</span>
+          <p class='click' id="p_5" onclick="clickshow(this,'example_pic5')">This is a fun and creative activity that involves teams of students racing against each other while wearing fancy dress costumes.<br>
+          You can organize a fancy dress relay for different age groups and have different themes for each race.
+          <div class="example_pic" id="example_pic5" style="display: none">
+            <div class="popup_main">
+              <img src="img/pic/pic6.jpg" alt="pic6">
+              <p onclick="clickshow(document.getElementById('p_5'),'example_pic5')">Close</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <p style="font-weight: bold; text-decoration: underline">Please click on sentence to check pictures!</p>
+      <p class="link_SDG">
+        Source : <a href="https://www.twinkl.jp/blog/sports-day-ideas" target='_blank'>Twinkl</a>
+      </p>
+    </div>
+    <div class="main_page" id="page_4">
+      <div id="backdrop">
+        <h2>Why?</h2>
+        <div class="reason">
+          <h3>Original Meaning from Cabinet Office</h3>
+          <div class="block">
+            <p>
+              <span class="bold">[JA]</span><br>スポーツを楽しみ、他者を尊重する精神を培うとともに、健康で活力ある社会の実現を願う。<br>
+              <span class="bold">[EN]</span><br>For providing an environment that pushes everyone from student to adult to pursue a healthy lifestyle.<br>
+            </p>
+          </div>
+        </div>
+        <div class="reason">
+          <h3>What we think</h3>
+          <div class="block">
+            <p>
+              Sports day can be a great way to show children how much fun taking part in sports can really be.<br>
+              It also gives children the opportunity to showcase their talents to their families and friends.<br>
+              As well as this, competing in sports days can
+            </p>
+          </div>
+          <div class="block">
+            <ul id="list_benefit">
+              <li>Improve health and fitness</li>
+              <li>Build leadership and teamwork skills</li>
+              <li>Improve social skills</li>
+              <li>Develop discipline</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Footer part-->
+  <footer>
+    <small>©Kyuuuu 2023, All right reserved<br></small>
+    <small>Feedback? Questions? Contact me at kyuuuu77@yahoo.co.jp<br></small>
+    <p id="updated">Updated on Dec/07/2023 1:00</p>
+  </footer>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
